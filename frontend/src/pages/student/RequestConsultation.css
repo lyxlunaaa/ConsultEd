@@ -1,0 +1,126 @@
+.dashboard-main {
+    padding: var(--spacing-2xl) 0;
+    background-color: #E5E7EB;
+    min-height: calc(100vh - 80px);
+}
+
+.page-title {
+    margin-bottom: var(--spacing-xl);
+}
+
+.section-title {
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-dark);
+}
+
+.professor-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: var(--spacing-lg);
+    padding-left: auto;
+}
+
+.professor-card {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.professor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.professor-avatar {
+    width: 80px;
+    height: 80px;
+    margin-bottom: var(--spacing-md);
+}
+
+.professor-avatar svg {
+    width: 100%;
+    height: 100%;
+}
+
+.professor-name {
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-dark);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.professor-course {
+    color: var(--text-dark);
+    font-weight: 500;
+    margin-bottom: var(--spacing-xs);
+    font-size: 0.9rem;
+}
+
+.professor-section {
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.btn-sm {
+    padding: var(--spacing-xs) var(--spacing-lg);
+    font-size: 0.950rem;
+    width: fit-content;
+    height: 50px;
+}
+
+.request-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-2xl);
+    box-shadow: var(--shadow-md);
+}
+
+.form-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-xl);
+    color: var(--text-dark);
+}
+
+.btn-submit {
+    width: auto;
+    padding: var(--spacing-sm) var(--spacing-2xl);
+    margin-top: var(--spacing-md);
+}
+
+.form-actions {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: flex-end;
+    margin-top: var(--spacing-lg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .professor-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .request-form-container {
+        padding: var(--spacing-md);
+    }
+}
+
+.logo {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}

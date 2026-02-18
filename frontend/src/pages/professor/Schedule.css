@@ -1,0 +1,102 @@
+.calendar-container {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-md);
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    background-color: var(--border);
+    border: 1px solid var(--border);
+}
+
+.calendar-month-header {
+    grid-column: 1 / -1;
+    background-color: #FCD34D;
+    padding: var(--spacing-md);
+    text-align: center;
+    font-weight: 700;
+    color: var(--text-dark);
+    font-size: 1.1rem;
+}
+
+.calendar-day-header {
+    background-color: var(--bg-light);
+    padding: var(--spacing-md);
+    text-align: center;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-transform: uppercase;
+}
+
+.calendar-day {
+    background-color: var(--white);
+    min-height: 120px;
+    padding: var(--spacing-sm);
+    position: relative;
+}
+
+.calendar-day.empty {
+    background-color: var(--bg-light);
+}
+
+.calendar-day.today {
+    background-color: #8c96b8;
+}
+
+.calendar-day.has-consultations {
+    background-color: #ffeda5;
+}
+
+.day-number {
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+}
+
+.day-consultations {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.consultation-item {
+    padding: var(--spacing-xs);
+    font-size: 0.75rem;
+}
+
+.consultation-text {
+    color: #DC2626;
+    font-weight: 500;
+    margin-bottom: 2px;
+    font-size: 0.7rem;
+    line-height: 1.3;
+}
+
+.empty-schedule {
+    text-align: center;
+    padding: var(--spacing-2xl);
+    color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+    .calendar-grid {
+        font-size: 0.875rem;
+    }
+
+    .calendar-day {
+        min-height: 80px;
+    }
+
+    .consultation-item {
+        font-size: 0.65rem;
+    }
+}
+
+.logo {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}

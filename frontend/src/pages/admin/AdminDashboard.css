@@ -1,0 +1,51 @@
+.role-description {
+    color: var(--text-light);
+    margin-bottom: var(--spacing-2xl);
+    font-size: 1.125rem;
+}
+
+.admin-cards-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    justify-content: center;
+    padding-left: auto;
+    
+}
+
+.admin-card {
+    background-color: var(--white);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-2xl);
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+    transition: var(--transition);
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.admin-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-blue);
+}
+
+.admin-card-primary {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+.admin-card-primary h3,
+.admin-card-primary p {
+    color: var(--white);
+}
+
+.admin-card-primary:hover {
+    border-color: var(--accent-yellow);
+}
+
+.logo {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}

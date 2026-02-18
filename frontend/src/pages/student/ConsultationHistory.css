@@ -1,0 +1,84 @@
+.dashboard-header {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: var(--spacing-md) 0;
+    box-shadow: var(--shadow-md);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.logo-consult {
+    color: #ffffff;
+}
+
+.logo-ed {
+    color: #FCD34D;
+}
+
+.dashboard-main {
+    padding: var(--spacing-2xl) 0;
+    background-color: #E5E7EB;
+    min-height: calc(100vh - 80px);
+}
+
+.page-title {
+    margin-bottom: var(--spacing-xl);
+    color: var(--text-dark);
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.purpose-cell {
+    max-width: 300px;
+}
+
+.status-cell {
+    min-width: 250px;
+}
+
+.status-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.status-label {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.status-details {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    line-height: 1.4;
+}
+
+.approval-details {
+    margin-top: var(--spacing-xs);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.approval-details small {
+    color: var(--text-light);
+    font-size: 0.75rem;
+}
+
+.logo {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}

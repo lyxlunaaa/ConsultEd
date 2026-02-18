@@ -1,0 +1,100 @@
+.request-detail-card,
+.approval-form-card {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.purpose-cell {
+    max-width: 300px;
+}
+
+.request-id-link {
+    background: none;
+    border: none;
+    color: #1800ad;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0;
+}
+
+.request-id-link:hover {
+    color: #0d0066;
+}
+
+.view-request-link {
+    color: #1800ad;
+    font-size: 0.85rem;
+    text-decoration: underline;
+}
+
+.approval-details {
+    margin-top: var(--spacing-xs);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.approval-details small {
+    color: var(--text-light);
+    font-size: 0.75rem;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.detail-item.full-width {
+    grid-column: 1 / -1;
+}
+
+.detail-item label {
+    font-weight: 600;
+    color: var(--primary-blue);
+}
+
+.detail-item span,
+.detail-item p {
+    color: var(--text-dark);
+}
+
+.radio-group {
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    cursor: pointer;
+    font-weight: normal;
+    color: var(--text-dark);
+}
+
+.radio-label input[type="radio"] {
+    width: auto;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .detail-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.logo {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,130 @@
+.dashboard-header {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: var(--spacing-md) 0;
+    box-shadow: var(--shadow-md);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.logo-consult {
+    color: #ffffff;
+}
+
+.logo-ed {
+    color: #FCD34D;
+}
+
+.dashboard-main {
+    padding: var(--spacing-2xl) 0;
+    background-color: #E5E7EB;
+    min-height: calc(100vh - 80px);
+}
+
+.welcome-message {
+    margin-bottom: var(--spacing-2xl);
+    color: var(--text-dark);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.action-cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    justify-content: center;
+    padding-left: auto;
+    
+}
+
+.action-card {
+    background-color: var(--white);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-2xl);
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+    transition: var(--transition);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.action-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.action-card-primary {
+    background-color: var(--white);
+    color: var(--white);
+}
+
+.action-card-primary h3,
+.action-card-primary p {
+    color: #000000;
+}
+
+.card-icon-wrapper {
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-icon {
+    width: 80px;
+    height: 80px;
+    color: #000000;
+}
+
+.action-card-primary .card-icon-check {
+    width: 80px;
+    height: 80px;
+    color: rgb(0, 0, 0);
+}
+
+.action-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-sm);
+    font-weight: 700;
+}
+
+.action-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.action-card-primary p {
+    opacity: 0.9;
+    color: rgb(0, 0, 0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .action-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome-message {
+        font-size: 1.5rem;
+    }
+}
+
+.logo {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
