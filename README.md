@@ -24,7 +24,7 @@ A Node.js backend API for managing student-professor consultations with role-bas
 
 1. **Clone or navigate to the project directory**
    ```bash
-
+   cd c:\Users\Gandhi John\Downloads\Assignment
    ```
 
 2. **Install dependencies** (already done)
