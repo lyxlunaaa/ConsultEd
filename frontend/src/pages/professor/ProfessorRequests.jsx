@@ -283,7 +283,7 @@ const ProfessorRequests = () => {
                                     <tr>
                                         <th>Request ID</th>
                                         <th>Date requested</th>
-                                        <th>Professor</th>
+                                        <th>Student Name</th>
                                         <th>Subject</th>
                                         <th>Purpose of request</th>
                                         <th>Status</th>
@@ -310,7 +310,7 @@ const ProfessorRequests = () => {
                                                     <span className="view-request-link">Click here to view Request</span>
                                                 </td>
                                                 <td>[{format(new Date(request.created_at), 'MM/yy/yyyy')}]</td>
-                                                <td>Prof. [{request.student_first_name} {request.student_last_name}]</td>
+                                                <td>[{request.student_first_name} {request.student_last_name}]</td>
                                                 <td>[{request.course_code}]</td>
                                                 <td className="purpose-cell">
                                                     [{request.purpose}]

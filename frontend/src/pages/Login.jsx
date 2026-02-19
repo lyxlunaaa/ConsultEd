@@ -107,7 +107,7 @@ const Login = () => {
                         "Closing the Gap Between Students and Faculty."
                     </h2>
                     <p className="hero-description">
-                        ConsultEd is an innovative system that streamlines faculty advising and consultation requests. It helps 2nd Year CCIT students reach the right professors quickly while keeping appointments organized and hassle-free.
+                        ConsultEd is an innovative system that streamlines faculty advising and consultation requests. It helps CCIT students reach the right professors quickly while keeping appointments organized and hassle-free.
                     </p>
                 </div>
             </div>
