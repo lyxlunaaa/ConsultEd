@@ -118,7 +118,7 @@ const ManageSections = () => {
                                         <tr key={index}>
                                             <td>{index + 1}</td>
                                             <td>{section.section}</td>
-                                            <td>-{section.course_name?.toUpperCase() || 'OBJECT ORIENTED PROGRAMMING'}"</td>
+                                            <td>{section.course_name?.toUpperCase() || 'OBJECT ORIENTED PROGRAMMING'}</td>
                                             <td>{section.course_code}</td>
                                             <td>{section.schedule}</td>
                                             <td className="professor-dropdown-cell">
